@@ -1,0 +1,878 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Meetup v0.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-01-30 09:24:06+0000\n"
+"Last-Translator: Caspar Huebinger <caspar@glueckpress.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:16
+#@ meetup
+msgid "Page not found [system error 404]"
+msgstr "Oje, kaputter Link! [404]"
+
+#: 404.php:20
+#@ meetup
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Sieht aus, als sähe es schlecht aus mit der gewünschten Seite. :/ Vielleicht versuchst du es mit einer Suche?"
+
+#: 404.php:27
+#@ meetup
+msgid "Most Used Categories"
+msgstr "Meist genutzte Kategorien"
+
+#. translators: %1$s: smilie
+#: 404.php:35
+#@ meetup
+msgid "Try looking in the monthly archives."
+msgstr "Du kannst auch die Monatsarchive durchkämmen…"
+
+#: archive.php:22
+#, php-format
+#@ meetup
+msgid "%1$s Category Archives: %2$s"
+msgstr "%1$s Kategorie-Archive: %2$s"
+
+#: archive.php:25
+#, php-format
+#@ meetup
+msgid "%1$s Tag Archives: %2$s"
+msgstr "%1$s Themen-Archive: %2$s"
+
+#: archive.php:32
+#, php-format
+#@ meetup
+msgid "%1$s Author Archives: %2$s"
+msgstr "%1$s Autoren-Archive: %2$s"
+
+#: archive.php:40
+#, php-format
+#@ meetup
+msgid "%1$s Daily Archives: %2$s"
+msgstr "%1$s Tagesarchive: %2$s"
+
+#: archive.php:43
+#, php-format
+#@ meetup
+msgid "%1$s Monthly Archives: %2$s"
+msgstr "%1$s Monatsarchive: %2$s"
+
+#: archive.php:46
+#, php-format
+#@ meetup
+msgid "%1$s Yearly Archives: %2$s"
+msgstr "%1$s Jahresarchive: %2$s"
+
+#: archive.php:49
+#, php-format
+#@ meetup
+msgid "%1$s Archives"
+msgstr "%1$s Archive"
+
+#: comments.php:32
+#, php-format
+#@ meetup
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Eine Antwort &bdquo;%2$s&rdquo;"
+msgstr[1] "%1$s Antworten zu &bdquo;%2$s&rdquo;"
+
+#: comments.php:39
+#: comments.php:59
+#@ meetup
+msgid "Comment navigation"
+msgstr "Komentar-Navigation"
+
+#: comments.php:40
+#: comments.php:60
+#@ meetup
+msgid "Older Comments"
+msgstr "Ältere Kommentare"
+
+#: comments.php:41
+#: comments.php:61
+#@ meetup
+msgid "Newer Comments"
+msgstr "Neuere Kommentare"
+
+#: comments.php:71
+#@ meetup
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: content-image.php:23
+#: content-quote.php:22
+#: content-video.php:22
+#, php-format
+#@ meetup
+msgid "Continue reading %1$s"
+msgstr "Weiterlesen: %1$s"
+
+#: content-image.php:18
+#: content-image.php:30
+#: content-quote.php:17
+#: content-quote.php:29
+#: content-single.php:25
+#: content-video.php:17
+#: content-video.php:29
+#: content.php:10
+#: content.php:19
+#: content.php:42
+#, php-format
+#@ meetup
+msgid "Permalink to %s"
+msgstr "Permalink zu %s"
+
+#. translators: used between list items, there is a space after the comma
+#: content-image.php:39
+#: content-image.php:49
+#: content-quote.php:38
+#: content-quote.php:48
+#: content-single.php:53
+#: content-single.php:67
+#: content-video.php:38
+#: content-video.php:48
+#: content.php:66
+#: content.php:76
+#@ meetup
+msgid ", "
+msgstr ", "
+
+#: content-image.php:43
+#: content-quote.php:42
+#: content-single.php:59
+#: content-video.php:42
+#: content.php:70
+#@ meetup
+msgid "Posted in"
+msgstr "Veröffentlicht in"
+
+#: content-image.php:54
+#: content-quote.php:53
+#: content-single.php:72
+#: content-video.php:53
+#: content.php:81
+#@ meetup
+msgid "Tagged"
+msgstr "Vertaggt"
+
+#: content-image.php:61
+#: content-quote.php:60
+#: content-video.php:60
+#: content.php:88
+#@ meetup
+msgid "Leave a comment"
+msgstr "Antworten"
+
+#: content-image.php:61
+#: content-quote.php:60
+#: content-video.php:60
+#: content.php:88
+#@ meetup
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: content-image.php:61
+#: content-quote.php:60
+#: content-video.php:60
+#: content.php:88
+#@ meetup
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: content-image.php:67
+#: content-page.php:22
+#: content-quote.php:66
+#: content-single.php:90
+#: content-video.php:66
+#: content.php:94
+#: image.php:57
+#: image.php:136
+#@ meetup
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: inc/template-tags.php:25
+#@ meetup
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Eine Semantische Personal Publishing Platform"
+
+#: inc/template-tags.php:25
+#, php-format
+#@ meetup
+msgid "Proudly powered by %s"
+msgstr "%s. Was sonst. &#x263A;"
+
+#: inc/template-tags.php:27
+#, php-format
+#@ meetup
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s von %2$s."
+
+#: functions.php:72
+#@ meetup
+msgid "Primary Menu"
+msgstr "Haupt-Menü"
+
+#: functions.php:100
+#@ meetup
+msgid "Primary Widget Area"
+msgstr "Primärer Widget-Bereich"
+
+#: functions.php:108
+#@ meetup
+msgid "Secondary Widget Area"
+msgstr "Sekundärer Widget-Bereich"
+
+#: header.php:46
+#, php-format
+#@ meetup
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: header.php:175
+#@ meetup
+msgid "Menu"
+msgstr "Menü"
+
+#: header.php:176
+#@ meetup
+msgid "Skip to content"
+msgstr "Zum Inhalt springen"
+
+#: image.php:34
+#@ meetup
+msgid "Next"
+msgstr "Nächste"
+
+#: image.php:35
+#@ meetup
+msgid "Previous"
+msgstr "Vorherige"
+
+#: image.php:36
+#: image.php:59
+#@ meetup
+msgid "Go back to post"
+msgstr "Zurück zum Beitrag"
+
+#: image.php:47
+#, php-format
+#@ meetup
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\" pubdate>%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr "Publiziert am <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\" pubdate>%2$s</time></span> in <a href=\"%6$s\" title=\"Zurück zu %7$s\" rel=\"gallery\">%7$s</a>"
+
+#: image.php:123
+#, php-format
+#@ meetup
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Kommentar hinterlassen\">Kommentieren</a> oder <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL für diesen Beitrag\" rel=\"trackback\">Trackback</a> hinterlassen."
+
+#: image.php:125
+#, php-format
+#@ meetup
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Kommentare sind geschlossen, aber du kannst einen Trackback hinterlassen: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL für diesen Beitrag\" rel=\"trackback\">Trackback URL</a>."
+
+#: image.php:127
+#@ meetup
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Trackbacks sind geschlossen, aber du kannst einen <a class=\"comment-link\" href=\"#respond\" title=\"Kommentar schreiben\">Kommentar hinterlassen</a>."
+
+#: image.php:129
+#@ meetup
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Kommentare und Trackbacks sind momentan geschlossen. Käffchen?"
+
+#: inc/images.php:35
+#@ meetup
+msgid "Photo: "
+msgstr "Foto: "
+
+#: inc/metaboxes/meetup-meta.php:3
+#, php-format
+#@ meetup
+msgid "Enter your meetup data and have it displayed in your post using the %1$s shortcode."
+msgstr "Gib deine Meetup-Daten ein und zeige sie in deinem Beitrag mithilfe des Shortcode %1$s an."
+
+#: inc/metaboxes/meetup-meta.php:7
+#@ meetup
+msgid "Meetup date"
+msgstr "Datum"
+
+#: inc/metaboxes/meetup-meta.php:9
+#@ meetup
+msgid "Enter a date"
+msgstr "Gib ein Datum für dein Meetup ein"
+
+#: inc/metaboxes/meetup-meta.php:14
+#@ meetup
+msgid "Meetup time"
+msgstr "Zeit"
+
+#: inc/metaboxes/meetup-meta.php:16
+#@ meetup
+msgid "Enter a time, like 18:00 or 3.45pm"
+msgstr "Die Uhrzeit deines Meetup, z.B. 18:00 oder 6.30"
+
+#: inc/metaboxes/meetup-meta.php:21
+#@ meetup
+msgid "Meetup location"
+msgstr "Location"
+
+#: inc/metaboxes/meetup-meta.php:23
+#@ meetup
+msgid "Name of your location"
+msgstr "Der Ort, an dem ihr euch trefft"
+
+#: inc/metaboxes/meetup-meta.php:28
+#@ meetup
+msgid "Meetup location URL"
+msgstr "Location-URL"
+
+#: inc/metaboxes/meetup-meta.php:30
+#@ meetup
+msgid "URL for your location, i.e. a Google Map"
+msgstr "URL für deine Location, z.B. bei Google Maps"
+
+#: inc/metaboxes/meetup-meta.php:35
+#@ meetup
+msgid "Meetup description"
+msgstr "Beschreibung"
+
+#: inc/metaboxes/meetup-meta.php:37
+#@ meetup
+msgid "Optional notes, i.e. public transportation"
+msgstr "Optionale Hinweise, z.B. öffentlicher Nahverkehr"
+
+#: inc/template-tags.php:210
+#@ meetup
+msgid "Post navigation"
+msgstr "Artikel-Navigation"
+
+#: inc/template-tags.php:214
+#, php-format
+#@ meetup
+msgctxt "Previous post link"
+msgid "%1$s"
+msgstr "%1$s"
+
+#: inc/template-tags.php:215
+#, php-format
+#@ meetup
+msgctxt "Next post link"
+msgid "%1$s"
+msgstr "%1$s"
+
+#: inc/template-tags.php:220
+#@ meetup
+msgid "Older posts"
+msgstr "Ältere Beiträge"
+
+#: inc/template-tags.php:224
+#@ meetup
+msgid "Newer posts"
+msgstr "Neuere Beiträge"
+
+#: inc/template-tags.php:249
+#@ meetup
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:249
+#: inc/template-tags.php:268
+#@ meetup
+msgid "(Edit)"
+msgstr "(Bearbeiten)"
+
+#: inc/template-tags.php:259
+#, php-format
+#@ meetup
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">sagt:</span>"
+
+#. translators: 1: date, 2: time
+#: inc/template-tags.php:266
+#, php-format
+#@ meetup
+msgid "%1$s at %2$s"
+msgstr "%1$s bei %2$s"
+
+#: inc/template-tags.php:275
+#@ meetup
+msgid "Your comment is awaiting moderation."
+msgstr "Dein Kommentar wartet auf Freischaltung. Käffchen?"
+
+#: inc/template-tags.php:304
+#, php-format
+#@ meetup
+msgid "View all posts by %s"
+msgstr "Alle Beiträge von %s ansehen"
+
+#: inc/template-tags.php:335
+#@ meetup
+msgid "Date"
+msgstr "Datum"
+
+#: inc/template-tags.php:336
+#@ meetup
+msgid "Time"
+msgstr "Zeit"
+
+#: inc/template-tags.php:337
+#@ meetup
+msgid "Location"
+msgstr "Location"
+
+#: inc/template-tags.php:338
+#@ meetup
+msgid "Description"
+msgstr "Beschreibung"
+
+#: inc/theme-options/theme-options.php:67
+#: inc/theme-options/theme-options.php:68
+#@ meetup
+msgid "Theme Options"
+msgstr "Theme Optionen"
+
+#: inc/theme-options/theme-options.php:189
+#, php-format
+#@ meetup
+msgid "Paste your %1$s here, or enter %2$s to disable webfonts completely.%3$s Default: %4$s"
+msgstr "Füge deine %1$s hier ein, oder gib %2$s ein, Webfonts komplett zu deaktivieren.%3$s Standard: %4$s"
+
+#: inc/theme-options/help/webfonts-help-tab.php:2
+#: inc/theme-options/theme-options.php:189
+#@ meetup
+msgid "http://www.google.com/webfonts"
+msgstr "http://www.google.com/webfonts"
+
+#: inc/theme-options/help/webfonts-help-tab.php:2
+#: inc/theme-options/theme-options.php:189
+#@ meetup
+msgid "Google webfonts"
+msgstr "Google Webfonts"
+
+#: inc/theme-options/theme-options.php:200
+#, php-format
+#@ meetup
+msgid "This goes in the %1$s section of your site. Remember to wrap your CSS into %2$s.%3$s If you are about to enter more than a few lines of CSS here, you might want to consider setting up a %4$s instead."
+msgstr "Dies geht in den %1$s Bereich deiner Site. Denke daran, dein CSS innerhalb von %2$s zu setzen.%3$s Falls du im Begriff bist, hier mehr als ein paar Zeilen CSS einzugeben, möchtest du dir vielleicht überlegen, stattdessen ein %4$s aufzusetzen."
+
+#: inc/theme-options/help/overview-help-tab.php:10
+#: inc/theme-options/help/overview-help-tab.php:18
+#: inc/theme-options/theme-options.php:200
+#@ meetup
+msgid "Child Theme"
+msgstr "Child Theme"
+
+#: inc/theme-options/theme-options.php:211
+#, php-format
+#@ meetup
+msgid "This goes in the footer section, somewhere before the %1$s tag. Remember to wrap your javascript into %2$s.%3$s Use %4$s for any custom jQuery code."
+msgstr "Dies kommt in den Footer deiner Site, irgendwo vor dem %1$s Tag. Setze dein Javascript innerhalb von %2$s.%3$s Benutze %4$s für eigenen jQuery-Code."
+
+#: inc/theme-options/help/scripts-help-tab.php:12
+#: inc/theme-options/theme-options.php:211
+#@ meetup
+msgid "jQuery noConflict wrappers"
+msgstr "&bdquo;jQuery noConflict wrappers&rdquo;"
+
+#: inc/theme-options/theme-options.php:225
+#, php-format
+#@ meetup
+msgid "%s Theme Options"
+msgstr "%s Theme Optionen"
+
+#: inc/tweaks.php:42
+#@ meetup
+msgid "Pages"
+msgstr "Seiten"
+
+#: inc/tweaks.php:47
+#@ meetup
+msgid "Next page"
+msgstr "Nächste Seite"
+
+#: inc/tweaks.php:48
+#@ meetup
+msgid "Previous page"
+msgstr "Vorherige Seite"
+
+#: inc/tweaks.php:74
+#, php-format
+#@ meetup
+msgid "Please %1$screate a page menu%2$s for your site and set it as \"Primary Menu\"."
+msgstr "Bitte %1$skreiere ein eigenes Menü%2$s für deine Site und setze es als &bdquo;Haupt-Menü&rdquo;"
+
+#: no-results.php:14
+#@ meetup
+msgid "Nothing Found"
+msgstr "Nichts gefunden. Minusnullgarnichts, leider."
+
+#: no-results.php:20
+#, php-format
+#@ meetup
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Bereit, deinen ersten Beitrag zu schreiben? <a href=\"%1$s\">Dann los</a>!"
+
+#: no-results.php:24
+#@ meetup
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Leider gibt es keine Ergebnisse für deine Suchbegriffe. Bitte versuche es noch einmal mit anderen Wörtern, die dasselbe meinen könnten."
+
+#: no-results.php:29
+#@ meetup
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Scheint, dass wir nicht finden, wonach du suchst. Vielleicht hilft das Suchfeld weiter?"
+
+#: search.php:17
+#, php-format
+#@ meetup
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: searchform.php:10
+#: searchform.php:12
+#@ meetup
+msgid "Search"
+msgstr "Suche"
+
+#: searchform.php:11
+#@ meetup
+msgid "Search&hellip; &#x21A9;"
+msgstr "Finden&hellip; &#x21A9;"
+
+#: sidebar.php:18
+#@ meetup
+msgid "Archives"
+msgstr "Archive"
+
+#: sidebar.php:25
+#@ meetup
+msgid "Meta"
+msgstr "Meta"
+
+#: inc/theme-options/help/help-sidebar.php:1
+#@ meetup
+msgid "More information:"
+msgstr "Weitere Informationen:"
+
+#: inc/theme-options/help/help-sidebar.php:1
+#@ meetup
+msgid "http://glueckpress.com/meetup-theme"
+msgstr "http://glueckpress.com/meetup-theme"
+
+#: inc/theme-options/help/help-sidebar.php:1
+#@ meetup
+msgid "Meetup Theme"
+msgstr "Meetup Theme"
+
+#: inc/theme-options/help/help-sidebar.php:2
+#@ meetup
+msgid "Support:"
+msgstr "Support:"
+
+#: inc/theme-options/help/help-sidebar.php:3
+#, php-format
+#@ meetup
+msgid "Not yet, unfortunately. We've barely started publishing themes and we're still busy getting things up and running. Meanwhile, you can catch us on %1s if you're totally hanging&hellip;"
+msgstr "Noch nicht, leider. Wir fangen gerade erst an mit Themes und sind noch dabei, eine Infrastruktur ans Laufen zu bringen. In der Zwischenzeit kannst du uns über %1s kriegen, wenn du überhaupt nicht weiter kommst&hellip;"
+
+#: inc/theme-options/help/help-sidebar.php:3
+#@ meetup
+msgid "http://twitter.com/glueckpress"
+msgstr "http://twitter.com/glueckpress"
+
+#: inc/theme-options/help/help-sidebar.php:3
+#@ meetup
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/theme-options/help/overview-help-tab.php:9
+#, php-format
+#@ meetup
+msgid "Howdy, %1$s!"
+msgstr "Moin, %1$s!"
+
+#: inc/theme-options/help/overview-help-tab.php:10
+#, php-format
+#@ meetup
+msgid "%1$s&#x201C;Decisions, not options&#x201D;%2$s, we say at WordPress. Our goal is to implement just enough Theme Options to enable you to customize your theme to the point where it would make sense to create a %3$s."
+msgstr "%1$s&#x201C;Entscheidungen statt Optionen&#x201D;%2$s, sagen wir bei WordPress. Unser Ziel ist es, gerade genug Theme Optionen zu implementieren, damit du dein Theme bis zu dem Punkt anpassen kannst, an dem es Sinn macht, ein %3$s zu kreieren."
+
+#: inc/theme-options/help/overview-help-tab.php:11
+#@ meetup
+msgid "Here are some typical additions users would need to make to a theme without touching any template files:"
+msgstr "Hier sind einige typische Anpassungen, die Nutzer vornehmen können sollten, ohne irgendwelche Dateien anfassen zu müssen:"
+
+#: inc/theme-options/help/overview-help-tab.php:13
+#, php-format
+#@ meetup
+msgid "Add a custom logo. You can do that by setting a %1$s."
+msgstr "Ein eigenes Logo hinzufügen. Das geht, indem du die %1$s definierst."
+
+#: inc/theme-options/help/overview-help-tab.php:13
+#@ meetup
+msgid "Custom Header"
+msgstr "Kopfzeile"
+
+#: inc/theme-options/help/overview-help-tab.php:14
+#@ meetup
+msgid "Add a custom javascript snippet, e.g. to activate tracking with Google Analytics."
+msgstr "Eigenes Javascript hinzufügen, z.B. um das Tracking mit Google Analytics zu aktivieren."
+
+#: inc/theme-options/help/overview-help-tab.php:15
+#@ meetup
+msgid "Add or modify CSS styles, e.g. for some extra HTML markup generated by a plugin."
+msgstr "CSS hinzufügen oder anpassen, z.B. für zusätzliches HTML, das von einem Plugin generiert wird."
+
+#: inc/theme-options/help/overview-help-tab.php:17
+#@ meetup
+msgid "So, that's what these option fields are for: adding your own CSS styles and scripts."
+msgstr "Also, dafür sind diese Felder da: Damit du dein eigenes CSS und Javascript hinzufügen kannst."
+
+#: inc/theme-options/help/overview-help-tab.php:17
+#@ meetup
+msgid "Also, since we use webfonts by Google in this theme, we thought it would be a nice idea to let you choose your own if you want to."
+msgstr "Außerdem dachten wir, weil wir Google Webfonts einsetzen, wäre es eine nette Idee, dich deine eigene Wahl treffen zu lassen."
+
+#: inc/theme-options/help/overview-help-tab.php:18
+#, php-format
+#@ meetup
+msgid "Any customization further beyond these Theme Options would most likely justify the creation of a %1$s&mdash;which, in fact, is a lot easier than might you think, so never fear to opt for that next %2$sbigger%3$s &#x201C;option&#x201D; if you feel the ones on this page are not sufficient for your purpose."
+msgstr "Jede Anpassung, die über die Möglichkeiten dieser Theme Optionen hinaus ginge, würde wahrscheinlich das Aufsetzen eines %1$s rechtfertigen &ndash; was übrigens sehr viel einfacher ist, als du dir vielleicht vorstellst. Also: Keine Angst vor dieser nächst %2$größeren%3$s &#x201C;Option&#x201D;, wenn du das Gefühl haben solltest, die Optionen auf dieser Seite seien für deine Zwecke nicht ausreichend."
+
+#: inc/theme-options/help/scripts-help-tab.php:1
+#@ meetup
+msgid "This section goes to the footer of your site, so you would typically use it for any javascript snippets, e.g. a Google Analytics tracking code: "
+msgstr "Dieser Bereich kommt an den Schluss deiner Seite, daher würde er typischerweise für irgendwelche Javascript-Schnipsel benutzt, z.B. für den Tracking-Code deines Google-Analytics-Kontos."
+
+#: inc/theme-options/help/scripts-help-tab.php:12
+#, php-format
+#@ meetup
+msgid "If you add jQuery functions here, remember to use %1$s, like so: "
+msgstr "Falls du hier jQuery benutzen möchtest, denke bitte dran, %1$s zu benutzen. Ungefähr so: "
+
+#: inc/theme-options/help/scripts-help-tab.php:18
+#@ meetup
+msgid "The the main jQuery script shipped with WordPress gets loaded by default, so you can start adding functions here right away."
+msgstr "Das mit WordPress ausgelieferte jQuery-Skript wird standardmäßig geladen. Du kannst hier also gleich mit eigenen Funktionen anfangen."
+
+#: inc/theme-options/help/styles-help-tab.php:1
+#@ meetup
+msgid "Typically, you would insert something like this into the big text area. e.g. in order to re-style the hover color of any links: "
+msgstr "Typischerweise würdest du vielleicht etwa Folgendes in das große Textfeld einsetzen, z.B. um die Hover-Farbe deiner Links neu zu stylen: "
+
+#: inc/theme-options/help/styles-help-tab.php:5
+#@ meetup
+msgid "That's it! Add whatever custom CSS you like here, it'll be written into the HTML markup on the other side."
+msgstr "Fertig! Füge hier jedwedes eigene CSS hinzu, und es wird auf der anderen Seite ins HTML geschrieben."
+
+#: inc/theme-options/help/styles-help-tab.php:6
+#, php-format
+#@ meetup
+msgid "By the way, don't let yourself be fooled by the field label: you can paste pratically any piece of code here that's meant to appear at the end of the %1s section of your site."
+msgstr "Lass dich übrigens von der Feldbezeichnung nicht täuschen: Du kannst hier praktisch jeden Schnipsel Code einfügen (außer PHP natürlich), der am Ende des %1s Bereichs deiner Site erscheinen soll."
+
+#: inc/theme-options/help/webfonts-help-tab.php:4
+#@ meetup
+msgid "Extract everything from inbetween the square brackets (these: [ ]) and paste it into your options text field. Don't forget to change the single quotes into double ones! In the end you should see something like this: "
+msgstr "Kopiere alles zwischen den eckigen Klammern (diesen hier: [ ]) und füge es hier in das Optionsfeld ein. Bitte denke daran, die einfachen Anführungszeichen durch doppelte zu ersetzen! Am Ende solltest du in Etwa so etwas vor dir sehen:"
+
+#: inc/theme-options/help/webfonts-help-tab.php:6
+#@ meetup
+msgid "That's it! Save your options and your done."
+msgstr "Das war’s! Speichere deine Optionen und du bist fertig."
+
+#: inc/theme-options/theme-options.php:39
+#@ meetup
+msgid "Custom CSS Styles"
+msgstr "Eigene CSS-Stile"
+
+#: inc/theme-options/theme-options.php:40
+#@ meetup
+msgid "Custom Javascript"
+msgstr "Eigenes Javascript"
+
+#: inc/theme-options/theme-options.php:102
+#@ meetup
+msgid "Overview"
+msgstr "Übersicht"
+
+#: inc/theme-options/theme-options.php:118
+#, php-format
+#@ meetup
+msgid "%s"
+msgstr "%s"
+
+#: content-image.php:18
+#: content-quote.php:17
+#: content-video.php:17
+#: content.php:19
+#@ meetup
+msgctxt "Sticky post label in the loop."
+msgid "Read this!"
+msgstr "Lies das!"
+
+#: image.php:132
+#: inc/template-tags.php:79
+#@ meetup
+msgid "Share this entry"
+msgstr "Diesen Beitrag teilen"
+
+#: image.php:132
+#: inc/template-tags.php:79
+#@ meetup
+msgid "Share"
+msgstr "Teilen"
+
+#: content-single.php:82
+#@ meetup
+msgid "Permalink to"
+msgstr "Permalink zu"
+
+#: inc/template-tags.php:19
+#@ meetup
+msgid "Flyin’ high in the friendly sky…"
+msgstr "Über den Wolken&hellip;"
+
+#: functions.php:116
+#@ meetup
+msgid "Footer Widget Area"
+msgstr "Widgets Fußzeile"
+
+#: inc/template-tags.php:97
+#@ meetup
+msgid "Continue reading"
+msgstr "Weiterlesen"
+
+#: inc/template-tags.php:115
+#@ meetup
+msgid "Posted by"
+msgstr "Publiziert von"
+
+#: inc/template-tags.php:170
+#, php-format
+#@ meetup
+msgctxt "Class name for author %2$s link"
+msgid "author-contact-link-%1$s"
+msgstr "author-contact-link-%1$s"
+
+#: inc/template-tags.php:171
+#, php-format
+#@ meetup
+msgid "Follow me on %s"
+msgstr "Folge mir bei %s"
+
+#: inc/template-tags.php:298
+#, php-format
+#@ meetup
+msgid "<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> by <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr "<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> von <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#: inc/template-tags.php:306
+#@ meetup
+msgid "Post date"
+msgstr "Datum"
+
+#: inc/tweaks.php:19
+#@ meetup
+msgid "Name and email are required. Your email address will not be published. URL is optional. Be nice!"
+msgstr "Name und Email sind erforderlich. Deine Email-Adresse wird nicht veröffentlicht. URL ist optional. Sei nett!"
+
+#: inc/tweaks.php:20
+#, php-format
+#@ meetup
+msgid "Some <abbr title=\"HyperText Markup Language\">HTML</abbr> allowed… %s"
+msgstr "Etwas <abbr title=\"HyperText Markup Language\">HTML</abbr> ist erlaubt… %s"
+
+#: inc/theme-options/help/webfonts-help-tab.php:1
+#, php-format
+#@ meetup
+msgid "Yeah, webfonts&hellip; you lov'em or you hate'em, it's simple as that. If you hate'em, just type the word %1s into the text field and they'll be gone."
+msgstr "Jaja, Webfotns&hellip; man liebt sie, oder man hasst sie. Wenn du sie hasst, schreibe einfach das Wörtchen %1s in das Textfeld, und sie sind weg."
+
+#: inc/theme-options/help/webfonts-help-tab.php:2
+#, php-format
+#@ meetup
+msgid "If you love them, though, but need to define your own, head over to %1s and get your own collection! In this theme we use the javascript way of implementation, so look for that piece of code over there. You only need the line where it says something like: "
+msgstr "Wenn du sie hingegen liebst, aber dein eigenes Set definieren möchtest, geh’ einfach rüber zu %1s und hol’ dir deine eigene Collection! In diesem Theme benutzen wir Javascript für die Implementierung, also schau da drüben bitte nach dem Javascript-Code-Schnipsel. Du brauchst die Zeile davon, die ungefähr so aussieht:"
+
+#: inc/theme-options/help/ogimage-help-tab.php:1
+#@ meetup
+msgid "You can set a default image for social networks to display in case no featured image is available from a post. Just upload via the Media uploader an paste the full URL into the text field."
+msgstr "Hier kannst du ein Standard-Vorschaubild für Social Networks setzen für den Fall, dass kein Beitragsbild verfügbar ist. Lade einfach ein Bild über die Mediathek hoch und füge die volle URL hier ein,"
+
+#: inc/theme-options/help/ogimage-help-tab.php:2
+#, php-format
+#@ meetup
+msgid "Learn more about the %1$s."
+msgstr "Erfahre mehr über das %1$s."
+
+#: inc/theme-options/help/publisher-help-tab.php:1
+#@ meetup
+msgid "Google can display the profile image from your G+ profile in search results. All you need to do is paste your G+ profile ID here (not the full URL, just the numeric part of it!)."
+msgstr "Google kann das Profilbild aus deinem Profil bei Google+ in seinen Suchergebnissen darstellen. Füge hier einfach die ID deines Profils bei G+ ein (nicht die volle URL, sondern nur den numerischen Teil!)."
+
+#: inc/theme-options/help/publisher-help-tab.php:2
+#, php-format
+#@ meetup
+msgid "Head over to %1$s to get it now!"
+msgstr "Geh’ jetzt zu %1$s und hol’ es dir!"
+
+#: inc/theme-options/theme-options.php:36
+#@ meetup
+msgid "Google+ ID"
+msgstr "Google+ ID"
+
+#: inc/theme-options/theme-options.php:37
+#@ meetup
+msgid "Default Open Graph image"
+msgstr "Automatisches Vorschaubild für Social Networks (Open Graph Protocol)"
+
+#: inc/theme-options/theme-options.php:38
+#@ meetup
+msgid "Google Webfonts"
+msgstr "Google Webfonts"
+
+#: inc/theme-options/theme-options.php:167
+#, php-format
+#@ meetup
+msgid "Paste a %1$s ID here in order to tell Google who is the publisher of this site."
+msgstr "Füge eine %1$s ID hier ein, um Google mitzuteilen, wer diese Site publiziert."
+
+#: inc/theme-options/theme-options.php:178
+#, php-format
+#@ meetup
+msgid "Paste an image URL here to set a default preview image for social networks. Head over to %1$s to upload one."
+msgstr "Füge die URL eines Bildes hier ein, um ein automatisches Vorschaubild für Social Networks zu definieren (s. Hilfe). Geh’ zu %1$s, um eins hoch zu laden."
+
+#: inc/theme-options/theme-options.php:178
+#@ default
+msgid "Media"
+msgstr ""
+
+#: inc/metaboxes/meetup-spec.php:6
+#@ meetup
+msgid "Meetup Event Data"
+msgstr "Meetup Termin-Daten"
+
+#: inc/template-tags.php:329
+#@ meetup
+msgid "Meetup"
+msgstr "Meetup"
+

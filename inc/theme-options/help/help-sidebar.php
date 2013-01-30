@@ -1,0 +1,3 @@
+<p><strong><?php _e( 'More information:', 'meetup' ); ?></strong></p><a href="<?php _e( 'http://glueckpress.com/meetup-theme', 'meetup' ); ?>"><?php _e( 'Meetup Theme', 'meetup' ); ?></a></p>
+<p><strong><?php _e( 'Support:', 'meetup' ); ?></strong></p>
+<p><em><?php printf( __( "Not yet, unfortunately. We've barely started publishing themes and we're still busy getting things up and running. Meanwhile, you can catch us on %1s if you're totally hanging&hellip;", 'meetup' ), '<a href="' . __( 'http://twitter.com/glueckpress', 'meetup' ) . '" target="_blank">' . __( 'Twitter', 'meetup' ) . '</a>' ); ?></em></p>

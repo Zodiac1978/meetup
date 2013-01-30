@@ -1,0 +1,2 @@
+<p><?php _e( 'Google can display the profile image from your G+ profile in search results. All you need to do is paste your G+ profile ID here (not the full URL, just the numeric part of it!).', 'meetup' ); ?></p>
+<p><?php printf( __( 'Head over to %1$s to get it now!', 'meetup' ), '<a href="https://plus.google.com/" target="_blank">Google+</a>' ); ?></p>

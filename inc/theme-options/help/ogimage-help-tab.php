@@ -1,0 +1,2 @@
+<p><?php _e( 'You can set a default image for social networks to display in case no featured image is available from a post. Just upload via the Media uploader an paste the full URL into the text field.', 'meetup' ); ?></p>
+<p><?php printf( __( 'Learn more about the %1$s.', 'meetup' ), '<a href="http://ogp.me/" target="_blank">Open Graph Protocol</a>' ); ?></p>
