@@ -1,7 +1,7 @@
 # Meetup
 ===
 
-Meetup is a mobile-first [WordPress](http://wordpress.org/) theme with a focus on meetups and community-related blogging. 
+Meetup is a mobile-first [WordPress](http://wordpress.org/) theme with a focus on meetups and community-related blogging and meetups. 
 
 * Responsive, mobile-first design.
 * Post formats for comprehensive blogging: Aside, Gallery, Image, Link, Quote, Video.
