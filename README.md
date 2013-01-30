@@ -13,9 +13,7 @@ Meetup is a mobile-first [WordPress](http://wordpress.org/) theme with a focus o
 * Based upon [_s](https://github.com/automattic/_s) by Automattic.
 
 ## Notes
-We are almost ready for 1.0! Everything should go very smooth, but still, for sake of your own security, don't use this in a productive area… yet. 
-Feedback and support always appreciated!
-An early demo can be found at http://glueckpress.com/meetup-theme/
+A demo can be found at http://glueckpress.com/wpmeetup-theme/
 
 ## Requirements
 * Requires at least: 3.4.2
