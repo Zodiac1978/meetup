@@ -1,21 +1,19 @@
 # Meetup
 ===
 
-Meetup is a mobile-first [WordPress](http://wordpress.org/) theme with a focus on meetups and community-related blogging. 
+Meetup is a mobile-first [WordPress](http://wordpress.org/) theme with a focus on meetups and community-related blogging and meetups. 
 
 * Responsive, mobile-first design.
 * Post formats for comprehensive blogging: Aside, Gallery, Image, Link, Quote, Video.
 * Extra Meetup metabox and shortcode to promote your meetup events easily. (No CPT hassle, though, just regular posts— WordPress's default features rock!)
-* Better image management with rewritten gallery and caption code.
+* <del>Better image management with rewritten gallery and caption code.</del> Moved to a [Toolbox module](https://github.com/glueckpress/modules)
 * Just enough Theme Options for easy customization.
 * Designer-friendly plain CSS (no SASS/LESS). ☺
 * GPL-compatible icon font [Entypo by Daniel Bruce](http://www.entypo.com)
 * Based upon [_s](https://github.com/automattic/_s) by Automattic.
 
 ## Notes
-We are almost ready for 1.0! Everything should go very smooth, but still, for sake of your own security, don't use this in a productive area… yet. 
-Feedback and support always appreciated!
-An early demo can be found at http://glueckpress.com/meetup-theme/
+A demo can be found at http://glueckpress.com/wpmeetup-theme/
 
 ## Requirements
 * Requires at least: 3.4.2
