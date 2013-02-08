@@ -40,11 +40,6 @@ function meetup_setup() {
 	 * Custom Theme Options
 	 */
 	require( get_template_directory() . '/inc/theme-options/theme-options.php' );
-	
-	/**
-	 * Custom functions for image management
-	 */
-	require( get_template_directory() . '/inc/images.php' );
 
 	/**
 	 * Make theme available for translation
