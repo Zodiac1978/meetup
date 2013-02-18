@@ -452,8 +452,6 @@ li.comment .children {  /* global line-height*2 */
 
 /* Horizontal rhythm */
 .margin-horiz,
-.hentry,
-.post,
 #nav-below.site-navigation,
 #image-navigation,
 li.comment #respond {
@@ -1795,6 +1793,14 @@ va {
 	.main-navigation .menu:after {
 		left:  auto;
 		right: -1px;
+	}
+	/* Horizontal rhythm */
+	.hentry,
+	.post {
+		margin-left: 20px;
+		margin-left: 2rem;
+		margin-right: 20px;
+		margin-right: 2rem;
 	}
 	#commentform {
 		max-width: 100%;
