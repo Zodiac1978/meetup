@@ -2287,12 +2287,12 @@ input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #0095bc;
 }
-.bypostauthor .comment-header,
-.bypostauthor .comment-header cite,
-.bypostauthor .comment-header a {
+.bypostauthor > .comment > .comment-header,
+.bypostauthor > .comment > .comment-header cite,
+.bypostauthor > .comment > .comment-header a {
 	color: #fff;
 }
-.bypostauthor .comment-header {
+.bypostauthor > .comment > .comment-header {
 	background: #0095bc;
 }
 .page-links-label:before {

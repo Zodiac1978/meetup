@@ -175,7 +175,7 @@ function meetup_settings_field_ogimage() {
 	$options = meetup_get_theme_options();
 	?>
 	<input class="regular-text code" type="text" name="meetup_theme_options[ogimage]" id="ogimage" value="<?php echo esc_url( $options['ogimage'] ); ?>" />
-	<br /><label class="description" for="ogimage"><?php printf( __( 'Paste an image URL here to set a default preview image for social networks. Head over to %1$s to upload one.', 'meetup' ), '<a href="' . admin_url() . '/upload.php" target="_blank">' . __( 'Media', 'default' ) . '</a>' ); ?></label>
+	<br /><label class="description" for="ogimage"><?php printf( __( 'Paste an image URL here to set a default preview image for social networks. Head over to %1$s to upload one.', 'meetup' ), '<a href="' . admin_url( 'upload.php' ) . '" target="_blank">' . __( 'Media', 'default' ) . '</a>' ); ?></label>
 	<?php
 }
 
