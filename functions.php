@@ -155,6 +155,8 @@ function meetup_google_webfonts() {
 	$webfonts = '"PT+Sans:400,700,400italic:latin","Strait::latin"';
 	
 	$options = get_option( 'meetup_theme_options' );
+	if( 'off' == $options[ 'webfonts' ] )
+		return;
 	if( is_array( $options ) && isset( $options[ 'webfonts' ] ) )
 		$webfonts = $options[ 'webfonts' ];
 ?>
