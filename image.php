@@ -33,7 +33,7 @@ get_header();
 				<nav id="image-navigation" class="site-navigation">
 					<span class="next-image"><?php next_image_link( false, sprintf( '%1$s<i class="icon-to-end"></i>', __( 'Next', 'meetup' ) ) ); ?></span>
 					<span class="previous-image"><?php previous_image_link( false, sprintf( '<i class="icon-to-start"></i>%1$s', __( 'Previous', 'meetup' ) ) ); ?></span>
-					<span class="back-to-post"><a href="<?php echo get_permalink( $post->post_parent ); ?>"><i class="icon-cancel"></i><?php _e( 'Go back to post', 'meetup' ) ?></a></span>
+					<span class="back-to-post"><a href="<?php echo get_permalink( $post->post_parent ); ?> class="icon-cancel"><?php _e( 'Go back to post', 'meetup' ) ?></a></span>
 				</nav><!-- #image-navigation -->
 				<?php endif; ?>
 				
@@ -56,7 +56,7 @@ get_header();
 							?>
 							<?php edit_post_link( __( 'Edit', 'meetup' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
 							<?php if ( count( $attachments ) == 1 ) : ?>
-							<p class="back-to-post"><a href="<?php echo get_permalink( $post->post_parent ); ?>"><i class="icon-cancel"></i><?php _e( 'Go back to post', 'meetup' ) ?></a></p>
+							<p class="back-to-post"><a href="<?php echo get_permalink( $post->post_parent ); ?>" class="icon-cancel"><?php _e( 'Go back to post', 'meetup' ) ?></a></p>
 							<?php endif; ?>
 						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
@@ -129,11 +129,10 @@ get_header();
 							<?php _e( 'Both comments and trackbacks are currently closed.', 'meetup' ); ?>
 						<?php endif; ?>
 						<span class="sep"> | </span>
-						<span class="share"><i class="icon-export"></i>&nbsp;<a href="#share-<?php the_ID(); ?>" title="<?php esc_attr_e( 'Share this entry', 'meetup' ); ?>"><?php _e( 'Share', 'meetup' ); ?></a></span>
-						<div id="share-<?php the_ID(); ?>" class="toggle">
-							<p><em>Kommen noch…</em></p>
-						</div>
-						<?php edit_post_link( __( 'Edit', 'meetup' ), ' <span class="edit-link">', '</span>' ); ?>
+						
+						<?php meetup_social_sharing( get_the_ID() ); ?>
+						
+						<?php edit_post_link( __( 'Edit', 'meetup' ), '<span class="sep"> | </span> <span class="edit-link">', '</span>' ); ?>
 					</footer><!-- .entry-meta -->
 				</article><!-- #post-<?php the_ID(); ?> -->
 

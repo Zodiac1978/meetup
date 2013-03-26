@@ -14,6 +14,8 @@
 if ( ! isset( $content_width ) )
 	$content_width = 640; /* pixels */
 
+
+add_action( 'after_setup_theme', 'meetup_setup' );
 if ( ! function_exists( 'meetup_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -83,13 +85,14 @@ function meetup_setup() {
 	add_editor_style();
 }
 endif; // meetup_setup
-add_action( 'after_setup_theme', 'meetup_setup' );
+
 
 /**
  * Register widgetized area and update sidebar with default widgets
  *
  * @since meetup 0.1
  */
+add_action( 'widgets_init', 'meetup_widgets_init' );
 function meetup_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Primary Widget Area', 'meetup' ),
@@ -116,7 +119,7 @@ function meetup_widgets_init() {
 		'after_title' => '</h1>',
 	) );
 }
-add_action( 'widgets_init', 'meetup_widgets_init' );
+
 
 /**
  * Add Option: Custom CSS Styles
@@ -131,6 +134,7 @@ function meetup_custom_css() {
 		echo $options[ 'styles' ];
 }
 
+
 /**
  * Add Option: Custom Javascript
  *
@@ -144,35 +148,25 @@ function meetup_custom_js() {
 		echo $options[ 'scripts' ];
 }
 
+
 /**
  * Add Option: Custom Webfonts
  *
  * @since meetup 0.4
  */
-add_action( 'wp_head', 'meetup_google_webfonts', 12 );
 function meetup_google_webfonts() { 
 	
-	$webfonts = '"PT+Sans:400,700,400italic:latin","Strait::latin"';
-	
 	$options = get_option( 'meetup_theme_options' );
-	if( 'off' == $options[ 'webfonts' ] )
-		return;
-	if( is_array( $options ) && isset( $options[ 'webfonts' ] ) )
-		$webfonts = $options[ 'webfonts' ];
-?>
-<script>//<!-- 
-	WebFontConfig = { google: { families: [ <?php echo $webfonts; ?> ] } };
-	(function() {
-		var wf = document.createElement('script');
-		wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-		wf.type = 'text/javascript';
-		wf.async = 'true';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(wf, s);
-	})(); // -->
-</script>
+	
+	if( ! isset( $options[ 'webfonts' ] ) ) :
+		$webfonts = apply_filters( 'meetup_default_google_webfonts', 'PT+Sans:400,700,400italic|Strait' );
+	else :
+		$webfonts = ( 'off' !== $options[ 'webfonts' ] ) ? $options[ 'webfonts' ] : false;
+	endif;
 
-<?php }
+	return $webfonts;
+}
+
 
 /**
  * Some custom javascript in the footer
@@ -197,6 +191,7 @@ function meetup_custom_js_footer() {
 				scrolltarget = $('#' + this.href.split('#')[1] ).offset().top;
 				$('html, body').animate({scrollTop:scrolltarget}, 250);
 			});
+			$('.site-info a.up').attr('href', '#'+$('html').attr('id'));
 	<?php  
 	
 		$posts = $wp_query->posts;
@@ -226,55 +221,99 @@ function meetup_custom_js_footer() {
 
 <?php }
 
+
 /**
  * Prints jQuery in footer on front-end.
  */
+add_action( 'wp_default_scripts', 'meetup_print_jquery_in_footer' );
 function meetup_print_jquery_in_footer( &$scripts) {
 	if ( ! is_admin() )
 		$scripts->add_data( 'jquery', 'group', 1 );
 }
-add_action( 'wp_default_scripts', 'meetup_print_jquery_in_footer' );
+
+
+/**
+ * Register scripts and styles
+ *
+ * @uses meetup_google_webfonts()
+ * @since meetup 0.7
+ */
+add_action( 'init', 'meetup_register_scripts' );
+function meetup_register_scripts() {
+	
+	// Version query. For development outcommend the use of _meetup_remove_script_version() below.
+	$lastupdated = date( 'YmdHis' );
+	
+	wp_register_style( 'theme', get_template_directory_uri() . '/css/theme.css', false, $lastupdated );
+	
+	// If you set up a Child Theme, this will call its style.css
+	wp_register_style( 'style', get_stylesheet_uri(), false, $lastupdated );
+	
+ 	wp_register_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.min.js', array( 'jquery' ), $lastupdated, true );
+ 	
+ 	wp_enqueue_script( 'socialshareprivacy', get_template_directory_uri() . '/js/jquery.socialshareprivacy.min.js', array( 'jquery' ), $lastupdated, true );
+
+ 	wp_register_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.min.js', array( 'jquery' ), $lastupdated );
+
+}
+
 
 /**
  * Enqueue scripts and styles
+ * 
+ * @uses meetup_google_webfonts()
+ * @since meetup 0.7
  */
-function meetup_scripts() {
+add_action( 'wp_enqueue_scripts', 'meetup_enqueue_scripts' );
+function meetup_enqueue_scripts() {
 	
-	// Version query. For development use 'date( 'YmdHis' )' and
-	// outcommend the use of _meetup_remove_script_version() below
-	$lastupdated = '20130112';
+ 	$webfonts = meetup_google_webfonts();
+	if( false !== $webfonts )
+		wp_enqueue_style( 'webfonts', "http://fonts.googleapis.com/css?family=$webfonts", false );
+
+	/* 
+		To load style.css of your Child Theme only and skip loading 
+		any CSS of Meetup Theme just pass an empty function to the filter like so: 
+		add_filter( 'meetup_load_parent_theme_stylesheet', '__return_false' );
+	*/
+	$load_parent_theme = apply_filters( 'meetup_load_parent_theme_stylesheet', true );
+	if( false !== $load_parent_theme )
+		wp_enqueue_style( 'theme' );
 	
-	// (Parent) Theme stylesheet. You can override this in a Child Theme
-	// by passing an empty function to the filter like so:
-	// add_filter( 'meetup_theme_stylesheet', '__return_zero' );
-	wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/theme.css', false, $lastupdated );
-	
-	// If you set up a Child Theme, this will call its style.css
-	wp_enqueue_style( 'style', get_stylesheet_uri(), false, $lastupdated );
-	
- 	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.min.js', array( 'jquery' ), '20121117', true );
+	if( is_child_theme() )
+		wp_enqueue_style( 'style' );
  	
- 	wp_enqueue_script( 'socialshareprivacy', get_template_directory_uri() . '/js/jquery.socialshareprivacy.min.js', array( 'jquery' ), '20121117', true );
+ 	wp_enqueue_script( 'small-menu' );
+ 	wp_enqueue_script( 'socialshareprivacy' );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
-	}
 
-	if ( is_singular() && wp_attachment_is_image() ) {
-	 	wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.min.js', array( 'jquery' ), '20120202' );
-	}
+	if ( is_singular() && wp_attachment_is_image() )
+	 	wp_enqueue_script( 'keyboard-image-navigation' );
 }
-add_action( 'wp_enqueue_scripts', 'meetup_scripts' );
+
 
 /**
  * Remove version queries from stylesheet and javascript calls
+ *
+ * @since meetup 0.1
  */
-function _meetup_remove_script_version( $src ){
-	$parts = explode( '?', $src );
-	return $parts[0];
-}
 add_filter( 'script_loader_src', '_meetup_remove_script_version', 15, 1 );
 add_filter( 'style_loader_src', '_meetup_remove_script_version', 15, 1 );
+function _meetup_remove_script_version( $src ){
+
+	$url = explode( '?', $src );
+	
+	if( 'http://fonts.googleapis.com/css' == $url[0] ) :
+		$version = explode( '&ver=', $url[1] );
+		$url[1] = $version[0];
+	endif;
+
+	return ( 'http://fonts.googleapis.com/css' == $url[0] ) ? $url[0] . '?' . $url[1] : $url[0];
+	
+}
+
 
 /**
  * Implement the Custom Header feature
@@ -283,6 +322,8 @@ require( get_template_directory() . '/inc/custom-header.php' );
 
 /**
  * Implement custom metaboxes
+ *
+ * @since meetup 0.1
  */
 require_once( get_template_directory() . '/inc/metaboxes/setup.php' );
 require_once( get_template_directory() . '/inc/metaboxes/meetup-spec.php' );

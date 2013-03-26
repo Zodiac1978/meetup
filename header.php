@@ -12,9 +12,9 @@
 $options = get_option( 'meetup_theme_options' );
 
 ?><!DOCTYPE html>
-<!--[if lt IE 9]><html class="lt-ie9 ie" <?php language_attributes(); ?> id="wpm"><![endif]-->
-<!--[if gte IE 9]><html class="gte-ie9 ie" <?php language_attributes(); ?> id="wpm"><![endif]-->
-<!--[if ! IE]><!--> <html class="no-ie" <?php language_attributes(); ?> id="wpm"><!--<![endif]-->
+<!--[if lt IE 9]><html class="lt-ie9 ie" <?php language_attributes(); ?> id="<?php echo apply_filters( 'meetup_html_id', 'wpm' ); ?>"><![endif]-->
+<!--[if gte IE 9]><html class="gte-ie9 ie" <?php language_attributes(); ?> id="<?php echo apply_filters( 'meetup_html_id', 'wpm' ); ?>"><![endif]-->
+<!--[if ! IE]><!--> <html class="no-ie" <?php language_attributes(); ?> id="<?php echo apply_filters( 'meetup_html_id', 'wpm' ); ?>"><!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <?php 

@@ -105,7 +105,7 @@ button,
 input,
 select,
 textarea {
-	font-family: sans-serif; 
+	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -444,6 +444,7 @@ li.comment .children {  /* global line-height*2 */
 .page-header,
 .comment-header,
 .wp-caption .wp-caption-text,
+.single .wp-caption.alignnone,
 .meetup-meetup-data h4,
 .site-footer .widget-area {  /* global line-height*2 */
 	padding-bottom: 24px;
@@ -931,6 +932,9 @@ figcaption,
 figcaption p {
 	margin: 0;
 }
+.single .wp-caption.alignnone .wp-caption-text {
+	padding-bottom: 0;
+}
 .site-content .gallery-item {
 	float: left;
 }
@@ -1367,7 +1371,11 @@ h1,h2,h3,h4,h5,h6,
 /* Regular text */
 body,
 .basefont,
-.sans-serif {
+.sans-serif,
+button,
+input,
+select,
+textarea {
 	font-family: "PT Sans", "Helvetica Neue", "Segoe UI", Tahoma, Arial, sans-serif; 
 	font-weight: 400;
 }
@@ -1385,6 +1393,7 @@ h1, h2, h3, h4, h5, h6,
 .widget-area,
 .site-navigation,
 .page-navigation,
+.page-title,
 .widget-title,
 .btn,
 button,
@@ -1421,13 +1430,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* Bold text */
 b,
-strong,
-.widget-title,
-.site-content .nav-next a,
-.site-content .nav-previous a,
-.main-small-navigation .menu li a,
-.meetup-meetup-data ul li span,
-#commentform label {
+strong {
 	font-weight: 700;
 }
 
@@ -1451,6 +1454,7 @@ blockquote cite,
 /* Uppercase text */
 .uppercase,
 .site-title,
+.page-title,
 .widget-title,
 .site-description,
 .site-content .nav-next a,
@@ -1555,8 +1559,7 @@ h4 small, .h4 small {
 	font-size: 16px;
 	font-size: 1.6rem;
 }
-.main-small-navigation h1,
-.page-header .page-title {
+.main-small-navigation h1 {
 	font-family: "PT Sans", "Helvetica Neue", "Segoe UI", Tahoma, Arial, sans-serif;
 	font-weight: 700;
 }

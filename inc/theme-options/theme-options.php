@@ -186,7 +186,7 @@ function meetup_settings_field_webfonts() {
 	$options = meetup_get_theme_options();
 	?>
 	<input class="regular-text code" type="text" name="meetup_theme_options[webfonts]" id="webfonts" value="<?php echo esc_attr( $options['webfonts'] ); ?>" />
-	<br /><label class="description" for="webfonts"><?php printf( __( 'Paste your %1$s here, or enter %2$s to disable webfonts completely.%3$s Default: %4$s', 'meetup' ), '<a href="' . __( 'http://www.google.com/webfonts', 'meetup' ) . '" target="_blank">' . __( 'Google webfonts', 'meetup' ) . '</a>', '<code>off</code>', '<br />', '<code>"PT+Sans:400,700,400italic:latin","Strait::latin"</code>' ); ?></label>
+	<br /><label class="description" for="webfonts"><?php printf( __( 'Paste your %1$s here, or enter %2$s to disable webfonts completely.%3$s Default: %4$s', 'meetup' ), '<a href="' . __( 'http://www.google.com/webfonts', 'meetup' ) . '" target="_blank">' . __( 'Google webfonts', 'meetup' ) . '</a>', '<code>off</code>', '<br />', '<code>PT+Sans:400,700,400italic|Strait</code>' ); ?></label>
 	<?php
 }
 

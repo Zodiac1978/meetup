@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Meetup v0.6\n"
+"Project-Id-Version: Meetup v0.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-01-30 09:24:06+0000\n"
+"PO-Revision-Date: 2013-03-18 14:43:59+0000\n"
 "Last-Translator: Caspar Huebinger <caspar@glueckpress.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
 "X-Poedit-Language: German\n"
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -196,11 +197,11 @@ msgstr "% Kommentare"
 #: content-image.php:67
 #: content-page.php:22
 #: content-quote.php:66
-#: content-single.php:90
+#: content-single.php:89
 #: content-video.php:66
 #: content.php:94
 #: image.php:57
-#: image.php:136
+#: image.php:135
 #@ meetup
 msgid "Edit"
 msgstr "Bearbeiten"
@@ -222,17 +223,17 @@ msgstr "%s. Was sonst. &#x263A;"
 msgid "Theme: %1$s by %2$s."
 msgstr "Theme: %1$s von %2$s."
 
-#: functions.php:72
+#: functions.php:67
 #@ meetup
 msgid "Primary Menu"
 msgstr "Haupt-Menü"
 
-#: functions.php:100
+#: functions.php:95
 #@ meetup
 msgid "Primary Widget Area"
 msgstr "Primärer Widget-Bereich"
 
-#: functions.php:108
+#: functions.php:103
 #@ meetup
 msgid "Secondary Widget Area"
 msgstr "Sekundärer Widget-Bereich"
@@ -296,11 +297,6 @@ msgstr "Trackbacks sind geschlossen, aber du kannst einen <a class=\"comment-lin
 #@ meetup
 msgid "Both comments and trackbacks are currently closed."
 msgstr "Kommentare und Trackbacks sind momentan geschlossen. Käffchen?"
-
-#: inc/images.php:35
-#@ meetup
-msgid "Photo: "
-msgstr "Foto: "
 
 #: inc/metaboxes/meetup-meta.php:3
 #, php-format
@@ -688,11 +684,6 @@ msgstr "Fertig! Füge hier jedwedes eigene CSS hinzu, und es wird auf der andere
 msgid "By the way, don't let yourself be fooled by the field label: you can paste pratically any piece of code here that's meant to appear at the end of the %1s section of your site."
 msgstr "Lass dich übrigens von der Feldbezeichnung nicht täuschen: Du kannst hier praktisch jeden Schnipsel Code einfügen (außer PHP natürlich), der am Ende des %1s Bereichs deiner Site erscheinen soll."
 
-#: inc/theme-options/help/webfonts-help-tab.php:4
-#@ meetup
-msgid "Extract everything from inbetween the square brackets (these: [ ]) and paste it into your options text field. Don't forget to change the single quotes into double ones! In the end you should see something like this: "
-msgstr "Kopiere alles zwischen den eckigen Klammern (diesen hier: [ ]) und füge es hier in das Optionsfeld ein. Bitte denke daran, die einfachen Anführungszeichen durch doppelte zu ersetzen! Am Ende solltest du in Etwa so etwas vor dir sehen:"
-
 #: inc/theme-options/help/webfonts-help-tab.php:6
 #@ meetup
 msgid "That's it! Save your options and your done."
@@ -728,19 +719,17 @@ msgctxt "Sticky post label in the loop."
 msgid "Read this!"
 msgstr "Lies das!"
 
-#: image.php:132
 #: inc/template-tags.php:79
 #@ meetup
 msgid "Share this entry"
 msgstr "Diesen Beitrag teilen"
 
-#: image.php:132
 #: inc/template-tags.php:79
 #@ meetup
 msgid "Share"
 msgstr "Teilen"
 
-#: content-single.php:82
+#: content-single.php:81
 #@ meetup
 msgid "Permalink to"
 msgstr "Permalink zu"
@@ -750,7 +739,7 @@ msgstr "Permalink zu"
 msgid "Flyin’ high in the friendly sky…"
 msgstr "Über den Wolken&hellip;"
 
-#: functions.php:116
+#: functions.php:111
 #@ meetup
 msgid "Footer Widget Area"
 msgstr "Widgets Fußzeile"
@@ -799,18 +788,6 @@ msgstr "Name und Email sind erforderlich. Deine Email-Adresse wird nicht veröff
 #@ meetup
 msgid "Some <abbr title=\"HyperText Markup Language\">HTML</abbr> allowed… %s"
 msgstr "Etwas <abbr title=\"HyperText Markup Language\">HTML</abbr> ist erlaubt… %s"
-
-#: inc/theme-options/help/webfonts-help-tab.php:1
-#, php-format
-#@ meetup
-msgid "Yeah, webfonts&hellip; you lov'em or you hate'em, it's simple as that. If you hate'em, just type the word %1s into the text field and they'll be gone."
-msgstr "Jaja, Webfotns&hellip; man liebt sie, oder man hasst sie. Wenn du sie hasst, schreibe einfach das Wörtchen %1s in das Textfeld, und sie sind weg."
-
-#: inc/theme-options/help/webfonts-help-tab.php:2
-#, php-format
-#@ meetup
-msgid "If you love them, though, but need to define your own, head over to %1s and get your own collection! In this theme we use the javascript way of implementation, so look for that piece of code over there. You only need the line where it says something like: "
-msgstr "Wenn du sie hingegen liebst, aber dein eigenes Set definieren möchtest, geh’ einfach rüber zu %1s und hol’ dir deine eigene Collection! In diesem Theme benutzen wir Javascript für die Implementierung, also schau da drüben bitte nach dem Javascript-Code-Schnipsel. Du brauchst die Zeile davon, die ungefähr so aussieht:"
 
 #: inc/theme-options/help/ogimage-help-tab.php:1
 #@ meetup
@@ -875,4 +852,21 @@ msgstr "Meetup Termin-Daten"
 #@ meetup
 msgid "Meetup"
 msgstr "Meetup"
+
+#: inc/theme-options/help/webfonts-help-tab.php:1
+#, php-format
+#@ meetup
+msgid "Yeah, webfonts &hellip; you lov'em or you hate'em, it's simple as that. If you hate'em, just type the word %1s into the text field and they'll be gone."
+msgstr "Jaja, Webfotns &hellip; man liebt sie, oder man hasst sie. Wenn du sie hasst, schreibe einfach das Wörtchen %1s in das Textfeld, und sie sind weg."
+
+#: inc/theme-options/help/webfonts-help-tab.php:2
+#, php-format
+#@ meetup
+msgid "If you love them, though, but need to define your own, head over to %1s and get your own collection! In this theme we use the Standard (stylesheet) way of implementation, so look for the stylesheet code snippet over there. You only need the line where it says something like: "
+msgstr "Wenn du sie hingegen liebst, aber dein eigenes Set definieren möchtest, geh’ einfach rüber zu %1s und hol’ dir deine eigene Collection! In diesem Theme benutzen wir die Standard-Implementierung (via Stylesheet), also schau da drüben bitte nach dem Stylesheet-Code-Schnipsel. Du brauchst die Zeile, die ungefähr so aussieht:"
+
+#: inc/theme-options/help/webfonts-help-tab.php:4
+#@ meetup
+msgid "Extract everything from inbetween the single quotes of the href attribute and paste it into your options text field. In the end you should see something like this: "
+msgstr "Kopiere alles zwischen den einfach Anführungszeichen des href-Attributs und füge es in das Textfeld in deinen Theme Optionen ein. Am Ende sollte es ungefähr so aussehen:"
 

@@ -76,8 +76,7 @@
 		
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 		<span class="sep"> | </span>
-		<i class="icon-bookmark"></i><?php 
-			printf( '<a href="%1$s" title="%2$s %3$s" rel="bookmark">Permalink</a>', 
+		<?php printf( '<a href="%1$s" title="%2$s %3$s" class="icon-bookmark" rel="bookmark">Permalink</a>', 
 					get_permalink(),
 					__( 'Permalink to', 'meetup' ),
 					the_title_attribute( 'echo=0' )

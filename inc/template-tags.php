@@ -76,7 +76,7 @@ if( ! function_exists( 'meetup_social_sharing' ) ) :
 function meetup_social_sharing( $postID = null ) { 
 	$postID = null !== $postID ? $postID : get_the_ID();
 	?>
-	<span class="share"><i class="icon-export"></i>&nbsp;<a href="#share-<?php echo $postID; ?>" title="<?php esc_attr_e( 'Share this entry', 'meetup' ); ?>"><?php _e( 'Share', 'meetup' ); ?></a></span>
+	<span class="share"><a href="#share-<?php echo $postID; ?>" title="<?php esc_attr_e( 'Share this entry', 'meetup' ); ?>" class="icon-export"><?php _e( 'Share', 'meetup' ); ?></a></span>
 	<div id="share-<?php echo $postID; ?>" class="share-buttons toggle"></div>
 <? }
 endif;
@@ -164,7 +164,7 @@ function meetup_author_contact_links( $userID = null, $wrapper = 'ul', $link_wra
 					? '' 
 					: sprintf(
 							 $link_wrapper['open'] . 
-							 '<a href="%1$s" class="%2$s" title="%3$s"><i class="icon-%5$s"></i>&nbsp;%4$s</a>' .
+							 '<a href="%1$s" class="%2$s icon-%5$s" title="%3$s">%4$s</a>' .
 							 $link_wrapper['close']
 							,$field[1]
 							,sprintf( _x( 'author-contact-link-%1$s', 'Class name for author %2$s link', 'meetup' ), $id, $field[0] )
