@@ -43,6 +43,16 @@ The Entypo icon font is licensed under [SIL Open Font License](http://scripts.si
 * [Bootstrap](http://twitter.github.com/bootstrap/)
 
 ## Changelog
+### 0.8
+* Added shortcut icon and touch icons if present. Images must be stored in (child)theme-folder/images/. Graceful fallback if 1 or more images are not present. Image file names are hard-coded to:
+	* favicon.ico
+	* apple-touch-icon.png
+	* apple-touch-icon-57x57-precomposed.png
+	* apple-touch-icon-72x72-precomposed.png
+	* apple-touch-icon-114x114-precomposed.png
+	* apple-touch-icon-144x144-precomposed.png
+* Bugfixes.
+
 ### 0.7
 * Switched Google Webfonts implementation from Javascript to CSS. **Please update your theme options if you’ve set custom webfonts!**
 
