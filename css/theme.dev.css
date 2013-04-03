@@ -674,7 +674,7 @@ footer.entry-meta .more-link {
 	text-align: center;
 }
 .entry-meta .comments-link,
-.entry-meta .sahre {
+.entry-meta .share {
 	white-space: nowrap;
 }
 .entry-content,
@@ -788,6 +788,11 @@ footer.entry-meta .more-link {
 .entry-content img,
 .comment-content img,
 .widget img {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+	box-sizing: border-box;
 	max-width: 100%; /* Fluid images for posts, comments, and widgets */
 }
 .site-header img,
@@ -1317,6 +1322,7 @@ object {
 h1,h2,h3,h4,h5,h6,
 .aligncenter,
 .site-footer,
+.site-info,
 .main-navigation,
 .entry-meta,
 .page-links,
@@ -2199,6 +2205,8 @@ pre {
 .byuser .comment-header a:hover {
 	color: #464646;
 }
+
+/* Text color */
 .textcolor,
 body,
 button,
@@ -2206,7 +2214,11 @@ input,
 select,
 textarea {
 	color: #464646;
-/* 	color: rgba(0,0,0,.8); */
+}
+
+/* Light text color */
+.wp-caption-text {
+	color: #969696;
 }
 a,
 a:visited {
@@ -2310,6 +2322,8 @@ footer.entry-meta {
 .site-info .up:active {
 	background: transparent;
 }
+
+/* Alert boxes */
 .alert { /* =warning */
 	background-color: #fffcd9;
 	border-color: #fff266;

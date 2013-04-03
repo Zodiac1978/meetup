@@ -169,6 +169,69 @@ function meetup_google_webfonts() {
 
 
 /**
+ * Add shortcut icon and touch icons if present
+ *
+ * Images must be stored in (child)theme-folder/images/.
+ * Graceful fallback if 1 or more images are not present.
+ * Image file names are hard-coded to:
+ * favicon.ico
+ * apple-touch-icon.png
+ * apple-touch-icon-57x57-precomposed.png
+ * apple-touch-icon-72x72-precomposed.png
+ * apple-touch-icon-114x114-precomposed.png
+ * apple-touch-icon-144x144-precomposed.png
+ * 
+ * @since 0.8
+ */
+add_action( 'wp_head', 'meetup_shortcut_icons' );
+function meetup_shortcut_icons() {
+	$shortcut_icons = array(
+		'fav'		=> 'favicon.ico',
+		'ati'		=> 'apple-touch-icon.png',
+		'ati-57'	=> 'apple-touch-icon-57x57-precomposed.png',
+		'ati-72'	=> 'apple-touch-icon-72x72-precomposed.png',
+		'ati-114'	=> 'apple-touch-icon-114x114-precomposed.png',
+		'ati-144'	=> 'apple-touch-icon-144x144-precomposed.png'
+	);
+	
+	foreach( $shortcut_icons as $size => $image ) :
+		if( file_exists( get_stylesheet_directory() . '/images/' . $image ) ) :
+			$uri = get_stylesheet_directory_uri() . '/images/' . $image;
+		elseif( file_exists( get_template_directory() . '/images/' . $image ) ) :
+			$uri = get_template_directory_uri() . '/images/' . $image;
+		else :
+			$uri = false;
+		endif;
+		
+		switch( $size ) :
+			
+			case 'fav' :
+				$html = ( false !== $uri ) ? '<link rel="shortcut icon" href="' . $uri . '" />' . "\n" : '';
+				break;
+			case 'ati' :
+				$html = ( false !== $uri ) ? '<link rel="apple-touch-icon" href="' . $uri . '" />' . "\n" : '';
+				break;
+			case 'ati-57' :
+				$html = ( false !== $uri ) ? '<link rel="apple-touch-icon" sizes="57x57" href="' . $uri . '" />' . "\n" : '';
+				break;
+			case 'ati-72' :
+				$html = ( false !== $uri ) ? '<link rel="apple-touch-icon" sizes="72x72" href="' . $uri . '" />' . "\n" : '';
+				break;
+			case 'ati-114' :
+				$html = ( false !== $uri ) ? '<link rel="apple-touch-icon" sizes="114x114" href="' . $uri . '" />' . "\n" : '';
+				break;
+			case 'ati-144' :
+				$html = ( false !== $uri ) ? '<link rel="apple-touch-icon" sizes="144x144" href="' . $uri . '" />' . "\n" : '';
+				break;
+		endswitch;
+		
+		echo $html;
+		
+	endforeach;
+}
+
+
+/**
  * Some custom javascript in the footer
  *
  * @since meetup 0.4

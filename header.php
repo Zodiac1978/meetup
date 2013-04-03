@@ -110,8 +110,6 @@ $options = get_option( 'meetup_theme_options' );
 	if( is_array( $options ) && isset( $options[ 'publisher' ] ) )
 		echo '<link rel="publisher" href="https://plus.google.com/' . $options[ 'publisher' ] . '" />';
  ?>
- <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
- <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/apple-touch-icon.png" />
  
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>

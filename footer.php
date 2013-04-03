@@ -19,7 +19,7 @@
 		<?php endif; ?>
 		
 		<div class="site-info">
-			<?php apply_filters( 'meetup_credits', meetup_footer_credits() ); ?>
+			<?php echo apply_filters( 'meetup_credits', meetup_footer_credits() ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon .site-footer -->
 </div><!-- #page .hfeed .site -->

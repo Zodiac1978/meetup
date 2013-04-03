@@ -14,19 +14,20 @@
  * 
  * @since meetup 0.6
  */
-function meetup_footer_credits(){ ?>
+function meetup_footer_credits(){
 
-	<a href="#wpm" title="<?php esc_attr_e( 'Flyin’ high in the friendly sky…', 'meetup'); ?>" class="up"><i class="icon-up-circled"></i></a>
-	<?php if ( get_page_by_path( 'impressum' ) ) : ?>
-	<span class="sep"> | </span>
-	<a href="<?php echo get_permalink( get_page_by_path( 'impressum' ) ) ?>" title="<?php echo esc_attr( get_the_title( get_page_by_path( 'impressum' ) ) ); ?>"><?php echo get_the_title( get_page_by_path( 'impressum' ) ); ?></a>
-	<?php endif; ?>
-	<span class="sep"> | </span>
-	<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'meetup' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'meetup' ), 'WordPress' ); ?></a>
-	<span class="sep"> | </span>
-	<?php printf( __( 'Theme: %1$s by %2$s.', 'meetup' ), 'Meetup', '<a href="http://glueckpress.com/" rel="designer">Gl&uuml;ckPress</a>' ); ?>
-
-<?php }
+	$credits = '<a href="#wpm" title="' . esc_attr__( 'Flyin’ high in the friendly sky…', 'meetup') . '" class="up"><i class="icon-up-circled"></i></a>';
+	if ( get_page_by_path( 'impressum' ) ) : 
+		$credits .= '<span class="sep"> | </span>';
+		$credits .= '<a href="' . get_permalink( get_page_by_path( 'impressum' ) ) . '" title="' .  esc_attr( get_the_title( get_page_by_path( 'impressum' ) ) ) . '">' .  get_the_title( get_page_by_path( 'impressum' ) ) . '</a>';
+	endif;
+	$credits .= '<span class="sep"> | </span>';
+	$credits .= '<a href="http://wordpress.org/" title="' . esc_attr__( 'A Semantic Personal Publishing Platform', 'meetup' ) . '" rel="generator">' . sprintf( __( 'Proudly powered by %s', 'meetup' ), 'WordPress' ) . '</a>';
+	$credits .= '<span class="sep"> | </span>';
+	$credits .= sprintf( __( 'Theme: %1$s by %2$s.', 'meetup' ), 'Meetup', '<a href="http://glueckpress.com/" rel="designer">Gl&uuml;ckPress</a>' );
+	
+	return $credits;
+}
 
 /**
  * Hacked post excerpt function to be used outside the Loop.
